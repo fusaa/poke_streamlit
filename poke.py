@@ -73,7 +73,7 @@ with col1:
        sorted_latest_and_height = sorted(zip(st.session_state['latest_seen'], st.session_state['height']), key=lambda x: x[1], reverse=True)
 
        for i,j in sorted_latest_and_height:
-           st.markdown("!- " + i.title() + " - " + str(j))
+           st.markdown("- " + i.title() + " - " + str(j))
    
 
 with col2:
