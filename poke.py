@@ -61,7 +61,6 @@ else:
 
 with col1:
    st.header("Recent Checked Pokes")
-   #  st.image("https://static.streamlit.io/examples/cat.jpg")
    col100, col200 = st.columns([1,1])
    with col100:
        st.write("Name")
@@ -85,7 +84,6 @@ with col3:
    with col10:
        st.image(sprites['other']['home']['front_default'], use_column_width = 'always')
    with col20:
-       # st.write(f'Name:{name.title()}')
        st.write(f'Height:{height}')
        st.write(f'Weight:{weight}')
        st.write(f'Moves:{moves}')
