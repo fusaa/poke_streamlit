@@ -27,6 +27,8 @@ pokemon_number = st.slider("Use the Slider to pick a Pokemon",
 
 name, height, weight, moves, sprites, cry = get_details(pokemon_number)
 
+height = height * 10
+
 height_data = pd.DataFrame({'Pokemon': ['Weedle', name, 'victreebel'],
                             'Heights': [30, height, 170]})
 
@@ -37,7 +39,7 @@ graph = sns.barplot(data = height_data,
                     y='Heights',
                     palette = colors)
 
-height = height *10
+
 
 
 
